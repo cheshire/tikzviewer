@@ -1,0 +1,20 @@
+\documentclass{article}
+
+\usepackage{tikz}
+\usepackage{tikz-qtree}
+
+\usetikzlibrary{graphs, positioning,shapes,backgrounds,intersections,calc}
+
+\definecolor{listinggray}{gray}{0.9}
+\definecolor{lbcolor}{rgb}{0.9,0.9,0.9}
+\definecolor{selected}{rgb}{0.85,0.12,0.12}
+
+\tikzstyle{program_node}=[circle,draw=blue!50,thick,minimum size=6mm]
+\tikzstyle{large_program_node}=[circle,draw=blue!50,thick,minimum size=15mm]
+\tikzstyle{transition}=[->,thick]
+\tikzstyle{selected_transition}=[->,very thick,densely dashed, draw=selected]
+
+\begin{document}
+    % The line below should be overriden by [sed].
+    \input{_FILENAME_}
+\end{document}
